@@ -1,4 +1,4 @@
-package com.andernam.notestutorial.di
+package com.andernam.notestutorial.ui.di
 
 import android.app.Application
 import androidx.room.Room
@@ -7,6 +7,7 @@ import com.andernam.notestutorial.feauture_note.data.repository.NoteRepositoryIm
 import com.andernam.notestutorial.feauture_note.domain.repository.NoteRepository
 import com.andernam.notestutorial.feauture_note.domain.use_case.AddNote
 import com.andernam.notestutorial.feauture_note.domain.use_case.DeleteNote
+import com.andernam.notestutorial.feauture_note.domain.use_case.GetNote
 import com.andernam.notestutorial.feauture_note.domain.use_case.GetNotes
 import com.andernam.notestutorial.feauture_note.domain.use_case.NotesUseCases
 import dagger.Module
@@ -42,7 +43,8 @@ object AppModule {
         return NotesUseCases(
             getNotes = GetNotes(repository),
             deleteNote = DeleteNote(repository),
-            addNote = AddNote(repository)
+            addNote = AddNote(repository),
+            getNote = GetNote(repository)
         )
     }
 }
