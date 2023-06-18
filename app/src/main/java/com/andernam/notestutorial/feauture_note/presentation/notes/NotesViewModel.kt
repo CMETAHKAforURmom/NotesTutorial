@@ -9,6 +9,7 @@ import com.andernam.notestutorial.feauture_note.domain.use_case.NotesUseCases
 import com.andernam.notestutorial.feauture_note.domain.utill.NoteOrder
 import com.andernam.notestutorial.feauture_note.domain.utill.OrderType
 import dagger.hilt.android.lifecycle.HiltViewModel
+import dagger.hilt.processor.internal.definecomponent.codegen._dagger_hilt_android_internal_builders_ViewModelComponentBuilder
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
