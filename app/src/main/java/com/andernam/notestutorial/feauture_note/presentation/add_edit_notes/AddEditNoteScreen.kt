@@ -1,7 +1,6 @@
 package com.andernam.notestutorial.feauture_note.presentation.add_edit_notes
 
 import android.annotation.SuppressLint
-import android.graphics.drawable.Icon
 import androidx.compose.animation.Animatable
 import androidx.compose.animation.core.tween
 import androidx.compose.foundation.background

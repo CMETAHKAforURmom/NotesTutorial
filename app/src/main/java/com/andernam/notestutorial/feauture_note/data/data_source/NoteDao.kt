@@ -8,7 +8,6 @@ import androidx.room.Query
 import com.andernam.notestutorial.feauture_note.domain.model.Note
 import kotlinx.coroutines.flow.Flow
 
-
 @Dao
 interface NoteDao {
     @Query("SELECT * FROM note")

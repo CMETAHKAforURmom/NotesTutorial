@@ -38,6 +38,7 @@ import androidx.navigation.NavController
 import com.andernam.notestutorial.R
 import com.andernam.notestutorial.feauture_note.presentation.notes.components.NoteItem
 import com.andernam.notestutorial.feauture_note.presentation.notes.components.OrderSection
+import com.andernam.notestutorial.feauture_note.presentation.utill.Screen
 import kotlinx.coroutines.launch
 
 @SuppressLint("UnusedMaterialScaffoldPaddingParameter")
@@ -55,7 +56,7 @@ fun NotesScreen(
         floatingActionButton = {
             FloatingActionButton(
                 onClick = {
-
+                          navController.navigate(Screen.AddEditNoteScreen.route)
                 }, containerColor = MaterialTheme.colorScheme.primary
             ) {
                 Icon(imageVector = Icons.Default.Add, contentDescription = "Add note")
@@ -101,7 +102,9 @@ fun NotesScreen(
                         modifier = Modifier
                             .fillMaxWidth()
                             .clickable {
-
+                                       navController.navigate(
+                                           Screen.AddEditNoteScreen.route + "?noteId=${note.id}&noteColor=${note.color}"
+                                       )
                             },
                     onDeleteClick = { viewModel.onEvent(NotesEvent.DeleteNote(note))
                     scope.launch {
