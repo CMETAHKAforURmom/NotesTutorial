@@ -1,6 +1,5 @@
 package com.andernam.notestutorial.feauture_note.presentation.notes.components
 
-import android.support.v4.os.IResultReceiver.Default
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.width

@@ -1,6 +1,5 @@
 package com.andernam.notestutorial.feauture_note.presentation.notes.components
 
-import android.widget.Space
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
